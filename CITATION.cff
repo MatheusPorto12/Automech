@@ -1,0 +1,48 @@
+# YAML 1.2
+---
+authors: 
+  - family-names: Mota Rodrigues
+    given-names: Gabriel Henrique
+  - family-names: Mota Rodrigues
+    given-names: Matheus Vinicius
+  - family-names: da Silva Porto
+    given-names: Matheus Martins
+  - family-names: Martins Fialho da Silva
+    given-names: Gabriel Matos
+    
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: De Paula
+    given-names: Hugo Bastos
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Veloso
+    given-names: Eveline Alonso
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Baroni de Carvalho
+    given-names: Juliana Amaral 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Seufitelli
+    given-names: Danilo Boechat
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Silva
+    given-names: Luiz Henrique da Costa
+
+cff-version: "1.1.0"
+keywords: 
+  - "Modelagem de Processos de Negócios"
+  - "Palavra chave 2"
+  - "Palavra chave 3"
+message: |
+    "If you use this software, please cite it using these metadata.
+    Se você utilizar este software, por favor cite-o utilizando estes metadados."
+repository-code: "https://github.com/url do projeto"
+title: "Título do projeto"
+abstract: |
+    "
+    Breve descrição do projeto
+    "
+...

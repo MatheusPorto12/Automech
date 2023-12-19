@@ -1,0 +1,214 @@
+:root{
+    --lightGray: #575756;
+    --darkGray: #2E2D2D;
+    --accentColor : #F7E925;
+    --almostBlack: #1D1A1B;
+}
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+/*NAV CONFIGS*/
+.nav-bottom-button{
+    display: none !important;
+}
+
+#nav-bar{
+    background-color: var(--lightGray);
+}
+
+#nav-bar > a{
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.nav-itens{
+    padding: 14px 20px 14px 20px;
+}
+
+.nav-itens > a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-itens > a:hover{
+    color: white;
+}
+
+li.active{
+    border: solid 1px white;
+    border-radius: 25px;
+}
+
+/*SECTION DE APRESENTAÇÃO*/
+#destaque{
+    background-color: var(--darkGray);
+    width: 100vw;
+    height: 30vh;
+
+    color: white;
+}
+
+#destaque > div > p:first-of-type{
+    font-size: 48px;
+    margin-bottom: 5vh;
+}
+
+#destaque > div:last-child{
+    font-size: 24px;
+}
+
+
+/*COMPONENTE DE PESQUISA*/
+.search{
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    border-radius: 8px;
+
+    background-color: var(--accentColor);
+    transform: translateY(-50%);
+}
+
+.search > *{
+    flex: 1;
+    margin-inline: 8px;
+    height: 10vh;
+}
+
+#search-checkbox{
+    display: flex;
+    padding: auto;
+    background-color: white;
+    border: solid 1px gainsboro;
+    border-radius: 5px;
+}
+
+#search-checkbox > *{
+    transform: translateY(30%);
+}
+
+#search-checkbox-input{
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+#search-button{
+    background-color: var(--accentColor);
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+
+/*CONFIGURAÇÃO DO CARD*/
+.card-estacionamento{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-body > p:first-of-type{
+    font-size: 14px;
+    color: var(--darkGray);
+}
+
+.card-image-top{
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/*OFERTA E DESCRICAO*/
+#ofertas{
+    color: var(--almostBlack);
+    font-size: 24px;
+}
+
+#ofertas-descricao{
+    color: var(--darkGray);
+    font-size: 16px;
+}
+
+/*PAGINÇÃO*/
+.navigation{
+    display: flex;
+    margin-left: 50%;
+}
+
+.page-link.active{
+    background-color: var(--accentColor) !important;
+    border-color: var(--accentColor) !important;
+}
+
+.page-link{
+    background-color: var(--darkGray) !important;
+    color: white !important;
+}
+
+#pagination{
+    transform: translateX(-50%);
+}
+
+@media (max-width: 900px) {
+    .search{
+        flex-direction: column;
+        height: 40vh;
+        transform: translateY(-20%);
+    }
+
+    .search > *{
+        margin-bottom: 8px;
+        height: 5vh;
+        margin-inline: 0;
+    }
+
+    #search-checkbox{
+        height: 10vh;
+    }
+
+    #search_local{
+        padding-right: 12px;
+    }
+
+
+    /*DESTAQUE*/
+    #destaque > div > p:first-of-type{
+        font-size: 24px;
+        margin-bottom: 5vh;
+    }
+    
+    #destaque > div:last-child{
+        font-size: 14px;
+    }
+
+    /*NAVBAR*/
+    .navbar-toggler{
+        margin-left: auto;
+    }
+
+    .collapse{
+        margin-top: 10px;
+    }
+
+    .nav-top-button{
+        display: none !important;
+    }
+
+    .nav-bottom-button{
+        display: block !important;
+    }
+
+    #nav-bar > a{
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
